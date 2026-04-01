@@ -8,6 +8,8 @@ Production-style Node.js backend for a finance dashboard with strict RBAC, real 
 - Health: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health`
 - OpenAPI: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs`
 - Full endpoint docs: [`docs/API_USAGE.md`](docs/API_USAGE.md)
+- Postman Collection (Repo): `https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
+- Postman Collection (Raw Import URL): `https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
 
 ## Primary Framework
 

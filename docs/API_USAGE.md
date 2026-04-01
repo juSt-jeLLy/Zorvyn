@@ -5,6 +5,8 @@
 - API Base URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1`
 - Health URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health`
 - OpenAPI URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs`
+- Postman Collection (GitHub): `https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
+- Postman Collection (Raw Import URL): `https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
 
 ## Full Live Endpoint URLs
 
