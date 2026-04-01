@@ -4,12 +4,12 @@ Production-style Node.js backend for a finance dashboard with strict RBAC, real 
 
 ## Live Deployment
 
-- Public API: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1`
-- Health: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health`
-- OpenAPI: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs`
+- Public API: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1)
+- Health: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health)
+- OpenAPI: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs)
 - Full endpoint docs: [`docs/API_USAGE.md`](docs/API_USAGE.md)
-- Postman Collection (Repo): `https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
-- Postman Collection (Raw Import URL): `https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
+- Postman Collection (Repo): [Finance-Dashboard-API.postman_collection.json](https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json)
+- Postman Collection (Raw Import URL): [raw import link](https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json)
 
 ## Primary Framework
 
@@ -86,7 +86,7 @@ Production-style Node.js backend for a finance dashboard with strict RBAC, real 
 
 ## API Surface
 
-Base URL: `http://localhost:4000/api/v1`
+Base URL: [http://localhost:4000/api/v1](http://localhost:4000/api/v1)
 
 - `GET /health`
 - `GET /docs`
@@ -121,9 +121,9 @@ npm run demo:seed-live
 This seeds tagged records (`PUBLIC_DEMO_V1`) on the deployed API in an idempotent way.
 
 Shared local/demo files:
-- [`.env.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.local)
-- [`.env.live.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.live.local)
-- [`data/demo-data.json`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/data/demo-data.json)
+- [`.env.local`](.env.local)
+- [`.env.live.local`](.env.live.local)
+- [`data/demo-data.json`](data/demo-data.json)
 
 ## Default Seed Users
 

@@ -2,28 +2,28 @@
 
 ## Live Deployment Links
 
-- API Base URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1`
-- Health URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health`
-- OpenAPI URL: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs`
-- Postman Collection (GitHub): `https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
-- Postman Collection (Raw Import URL): `https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json`
+- API Base URL: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1)
+- Health URL: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health)
+- OpenAPI URL: [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs)
+- Postman Collection (GitHub): [Finance-Dashboard-API.postman_collection.json](https://github.com/juSt-jeLLy/Zorvyn/blob/main/docs/postman/Finance-Dashboard-API.postman_collection.json)
+- Postman Collection (Raw Import URL): [raw import link](https://raw.githubusercontent.com/juSt-jeLLy/Zorvyn/main/docs/postman/Finance-Dashboard-API.postman_collection.json)
 
 ## Full Live Endpoint URLs
 
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health` (public)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs` (public)
-- `POST https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/auth/login` (public)
-- `POST https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users` (ADMIN)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users` (ADMIN)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId` (ADMIN)
-- `PATCH https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId` (ADMIN)
-- `POST https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records` (ADMIN)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records` (ADMIN, ANALYST)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId` (ADMIN, ANALYST)
-- `PATCH https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId` (ADMIN)
-- `DELETE https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId` (ADMIN)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/summary` (VIEWER, ANALYST, ADMIN)
-- `GET https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/trend` (VIEWER, ANALYST, ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health) (public)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs) (public)
+- `POST` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/auth/login](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/auth/login) (public)
+- `POST` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users) (ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users) (ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId) (ADMIN)
+- `PATCH` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/users/:userId) (ADMIN)
+- `POST` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records) (ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records) (ADMIN, ANALYST)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId) (ADMIN, ANALYST)
+- `PATCH` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId) (ADMIN)
+- `DELETE` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/records/:recordId) (ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/summary](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/summary) (VIEWER, ANALYST, ADMIN)
+- `GET` [https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/trend](https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/dashboard/trend) (VIEWER, ANALYST, ADMIN)
 
 ## Authentication
 
@@ -47,10 +47,10 @@ Authorization: Bearer <ACCESS_TOKEN>
 
 A tagged dataset is supported with tag `PUBLIC_DEMO_V1`.
 
-- Seeding script: [`scripts/seed-live-demo.mjs`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/scripts/seed-live-demo.mjs)
-- Data source file: [`data/demo-data.json`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/data/demo-data.json)
-- Shared local env file: [`.env.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.local)
-- Shared live env file: [`.env.live.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.live.local)
+- Seeding script: [`scripts/seed-live-demo.mjs`](../scripts/seed-live-demo.mjs)
+- Data source file: [`data/demo-data.json`](../data/demo-data.json)
+- Shared local env file: [`.env.local`](../.env.local)
+- Shared live env file: [`.env.live.local`](../.env.live.local)
 - Command:
 
 ```bash
