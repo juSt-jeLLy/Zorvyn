@@ -1,0 +1,19 @@
+services:
+  finance-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: finance-backend
+    ports:
+      - "4000:4000"
+    environment:
+      PORT: "4000"
+      NODE_ENV: "production"
+      DATA_FILE_PATH: "./data/finance.db"
+      JWT_SECRET: "change-this-for-production-with-very-long-secret"
+      JWT_EXPIRES_IN: "8h"
+      DEFAULT_ADMIN_EMAIL: "admin@finance.local"
+      DEFAULT_ADMIN_PASSWORD: "ChangeMe123!"
+      DEFAULT_ADMIN_NAME: "Finance Admin"
+    volumes:
+      - ./data:/app/data
