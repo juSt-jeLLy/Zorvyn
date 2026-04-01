@@ -5,6 +5,8 @@ Production-style Node.js backend for a finance dashboard with strict RBAC, real 
 ## Live Deployment
 
 - Public API: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1`
+- Health: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/health`
+- OpenAPI: `https://finance-dashboard-api-production-6a11.up.railway.app/api/v1/docs`
 - Full endpoint docs: [`docs/API_USAGE.md`](docs/API_USAGE.md)
 
 ## Primary Framework
@@ -108,6 +110,14 @@ npm run seed
 npm run dev
 ```
 
+## Live Demo Data
+
+```bash
+npm run demo:seed-live
+```
+
+This seeds tagged records (`PUBLIC_DEMO_V1`) on the deployed API in an idempotent way.
+
 ## Default Seed Users
 
 - `admin@finance.local / ChangeMe123!` (ADMIN)
@@ -160,4 +170,3 @@ This persists SQLite data through a mounted `./data` volume.
 - Amounts are stored in integer cents for precision.
 - Date filters are inclusive.
 - Soft-deleted records are excluded from dashboard aggregates.
-# Zorvyn

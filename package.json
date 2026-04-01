@@ -11,6 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:live-docs-api": "node scripts/verify-live-api.mjs",
+    "demo:seed-live": "node scripts/seed-live-demo.mjs",
     "db:init": "tsx src/database/init.ts",
     "seed": "tsx src/database/seed.ts"
   },
