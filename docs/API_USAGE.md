@@ -46,6 +46,9 @@ Authorization: Bearer <ACCESS_TOKEN>
 A tagged dataset is supported with tag `PUBLIC_DEMO_V1`.
 
 - Seeding script: [`scripts/seed-live-demo.mjs`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/scripts/seed-live-demo.mjs)
+- Data source file: [`data/demo-data.json`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/data/demo-data.json)
+- Shared local env file: [`.env.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.local)
+- Shared live env file: [`.env.live.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.live.local)
 - Command:
 
 ```bash

@@ -1,0 +1,53 @@
+{
+  "tag": "PUBLIC_DEMO_V1",
+  "records": [
+    {
+      "key": "income_salary",
+      "amount": "5000.00",
+      "type": "INCOME",
+      "category": "Salary",
+      "occurredOn": "2026-01-05T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::income_salary"
+    },
+    {
+      "key": "income_freelance",
+      "amount": "850.00",
+      "type": "INCOME",
+      "category": "Freelance",
+      "occurredOn": "2026-01-18T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::income_freelance"
+    },
+    {
+      "key": "expense_rent",
+      "amount": "1800.00",
+      "type": "EXPENSE",
+      "category": "Rent",
+      "occurredOn": "2026-01-02T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::expense_rent"
+    },
+    {
+      "key": "expense_groceries",
+      "amount": "320.50",
+      "type": "EXPENSE",
+      "category": "Groceries",
+      "occurredOn": "2026-01-10T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::expense_groceries"
+    },
+    {
+      "key": "expense_transport",
+      "amount": "140.25",
+      "type": "EXPENSE",
+      "category": "Transport",
+      "occurredOn": "2026-01-21T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::expense_transport"
+    },
+    {
+      "key": "income_bonus",
+      "amount": "1200.00",
+      "type": "INCOME",
+      "category": "Bonus",
+      "occurredOn": "2026-02-03T00:00:00.000Z",
+      "notes": "PUBLIC_DEMO_V1::income_bonus"
+    }
+  ]
+}

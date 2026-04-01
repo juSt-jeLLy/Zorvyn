@@ -118,6 +118,11 @@ npm run demo:seed-live
 
 This seeds tagged records (`PUBLIC_DEMO_V1`) on the deployed API in an idempotent way.
 
+Shared local/demo files:
+- [`.env.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.local)
+- [`.env.live.local`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/.env.live.local)
+- [`data/demo-data.json`](/Users/yagnesh/Desktop/2026%20HACKATHONS/merge/finance-dashboard-backend/data/demo-data.json)
+
 ## Default Seed Users
 
 - `admin@finance.local / ChangeMe123!` (ADMIN)

@@ -1,60 +1,26 @@
 #!/usr/bin/env node
 
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+
 const BASE_URL = process.env.BASE_URL || "https://finance-dashboard-api-production-6a11.up.railway.app/api/v1";
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@finance.local";
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "ChangeMe123!";
-const DEMO_TAG = "PUBLIC_DEMO_V1";
 
-const DEMO_RECORDS = [
-  {
-    key: "income_salary",
-    amount: "5000.00",
-    type: "INCOME",
-    category: "Salary",
-    occurredOn: "2026-01-05T00:00:00.000Z",
-    notes: `${DEMO_TAG}::income_salary`,
-  },
-  {
-    key: "income_freelance",
-    amount: "850.00",
-    type: "INCOME",
-    category: "Freelance",
-    occurredOn: "2026-01-18T00:00:00.000Z",
-    notes: `${DEMO_TAG}::income_freelance`,
-  },
-  {
-    key: "expense_rent",
-    amount: "1800.00",
-    type: "EXPENSE",
-    category: "Rent",
-    occurredOn: "2026-01-02T00:00:00.000Z",
-    notes: `${DEMO_TAG}::expense_rent`,
-  },
-  {
-    key: "expense_groceries",
-    amount: "320.50",
-    type: "EXPENSE",
-    category: "Groceries",
-    occurredOn: "2026-01-10T00:00:00.000Z",
-    notes: `${DEMO_TAG}::expense_groceries`,
-  },
-  {
-    key: "expense_transport",
-    amount: "140.25",
-    type: "EXPENSE",
-    category: "Transport",
-    occurredOn: "2026-01-21T00:00:00.000Z",
-    notes: `${DEMO_TAG}::expense_transport`,
-  },
-  {
-    key: "income_bonus",
-    amount: "1200.00",
-    type: "INCOME",
-    category: "Bonus",
-    occurredOn: "2026-02-03T00:00:00.000Z",
-    notes: `${DEMO_TAG}::income_bonus`,
-  },
-];
+const loadDemoData = async () => {
+  const filePath = resolve(process.cwd(), "data/demo-data.json");
+  const rawData = await readFile(filePath, "utf8");
+  const parsedData = JSON.parse(rawData);
+
+  if (typeof parsedData.tag !== "string" || !Array.isArray(parsedData.records)) {
+    throw new Error("Invalid demo-data.json format");
+  }
+
+  return {
+    tag: parsedData.tag,
+    records: parsedData.records,
+  };
+};
 
 const toJson = async (response) => {
   const text = await response.text();
@@ -85,10 +51,13 @@ const login = async () => {
 };
 
 const run = async () => {
+  const demoData = await loadDemoData();
+  const demoTag = demoData.tag;
+
   const adminToken = await login();
 
   const existingResponse = await fetch(
-    `${BASE_URL}/records?page=1&pageSize=100&type=INCOME&search=${encodeURIComponent(DEMO_TAG)}`,
+    `${BASE_URL}/records?page=1&pageSize=100&type=INCOME&search=${encodeURIComponent(demoTag)}`,
     {
       headers: { authorization: `Bearer ${adminToken}` },
     },
@@ -100,7 +69,7 @@ const run = async () => {
   }
 
   const existingExpenseResponse = await fetch(
-    `${BASE_URL}/records?page=1&pageSize=100&type=EXPENSE&search=${encodeURIComponent(DEMO_TAG)}`,
+    `${BASE_URL}/records?page=1&pageSize=100&type=EXPENSE&search=${encodeURIComponent(demoTag)}`,
     {
       headers: { authorization: `Bearer ${adminToken}` },
     },
@@ -119,7 +88,7 @@ const run = async () => {
 
   let createdCount = 0;
 
-  for (const record of DEMO_RECORDS) {
+  for (const record of demoData.records) {
     if (existingNotes.has(record.notes)) {
       console.log(`SKIP ${record.key} (already exists)`);
       continue;
@@ -154,7 +123,7 @@ const run = async () => {
 
   console.log(`Demo seed complete. created=${createdCount}`);
   console.log(`Summary totals: ${JSON.stringify(summaryPayload.data.totals)}`);
-  console.log(`Use search=${DEMO_TAG} in /records to fetch demo entries.`);
+  console.log(`Use search=${demoTag} in /records to fetch demo entries.`);
 };
 
 run().catch((error) => {
